@@ -39,9 +39,9 @@ class JiraStory(BaseModel):
 
 
 # Replace these:
-JIRA_EMAIL = 'mustafaalkaysi@gmail.com'
+JIRA_EMAIL = os.getenv('JIRA_EMAIL')
 API_TOKEN = os.getenv('JIRA_API_KEY')
-JIRA_DOMAIN = 'mustafa-alkaysi.atlassian.net'
+JIRA_DOMAIN = os.getenv('JIRA_DOMAIN')
 
 JQL = 'project = TEST'
 
